@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <title>Main Page</title>
+</head>
+<body class="bg-light">
+    <header class="p-3 d-flex justify-content-around">
+        <p></p>
+        <a href="logout" class="h4">Logout</a>
+    </header>
+    <main>
+        <div class="d-flex flex-column align-items-center mt-3">
+            <div class="h5">
+                <a href="new_event">Create a New Event</a>
+            </div>
+            <div class="mt-3">
+                <table class="table table-striped table-bordered">
+                <tr>
+                    <th>Event Name</th>
+                    <th>Location</th>
+                    <th>Event Date</th>
+                    <th>Details</th>
+                </tr>
+                {% for event in events %}
+                <tr>
+                    <td>{{event.event_name}}</td>
+                    <td>{{event.location}}</td>
+                    <td>{{event.date}}</td>
+                    <td><a href="view/{{event.id}}">Details</a></td>
+                </tr>
+                {% endfor %}
+                </table>
+            </div>
+            <p class="m-3 h5">{{status}}</p>
+        </div>
+    </main>
+</body>
+</html>
