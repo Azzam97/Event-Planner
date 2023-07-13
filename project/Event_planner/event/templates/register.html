@@ -12,28 +12,28 @@
 
     <title>Registration</title>
 </head>
-<body class="bg-light"> 
+<body class="bg-light bg-gradient"> 
     <header class="d-flex justify-content-center mt-4 p-5">
         <p class="h4">Already have an account? <a href="login">Login</a></p>
     </header>
     <main>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center container bg-dark border border-danger bg-gradient">
             <form method="POST" action="/register" class="d-flex flex-column mt-3">
                 {% csrf_token %}
                 <table>
-                    <tr class="h5"><td>User Name: </td><td><input type="text" name="username"></td></tr>
-                    <tr class="h5"><td>Email: </td><td><input type="text" name="email"></td></tr>
-                    <tr class="h5"><td>Password: </td><td><input type="password" name="password"></td></tr>
-                    <tr class="h5"><td>Confirm PWD: </td><td><input type="password" name="pwdconfirm"></td></tr>
+                    <tr class="h5 text-white"><td>User Name: </td><td><input type="text" name="username"></td></tr>
+                    <tr class="h5 text-white"><td>Email: </td><td><input type="text" name="email"></td></tr>
+                    <tr class="h5 text-white"><td>Password: </td><td><input type="password" name="password"></td></tr>
+                    <tr class="h5 text-white"><td>Confirm PWD: </td><td><input type="password" name="pwdconfirm"></td></tr>
                 </table>
-                <input type="submit" value="Register" class="shadow-lg bg-success rounded mt-3 h5">
+                <input type="submit" value="Register" class="shadow-lg bg-secondary rounded mt-3 h5">
             </form>
         </div>
         <div class="errors">
             {% if messages %}
-            <ul class="messages">    
+            <ul class="messages alert alert-danger" role="alert">    
                 {% for message in messages %}    
-                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    <li {% if message.tags %} {% endif %}>{{ message }}</li>    
                 {% endfor %}
             </ul>
             {% endif %}

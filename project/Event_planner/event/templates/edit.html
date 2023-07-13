@@ -10,28 +10,28 @@
     />
     <title>Create New Event</title>
 </head>
-<body class="bg-light">
+<body class="bg-light bg-gradient">
     <header class="d-flex justify-content-around p-3">
         <a href="/view/{{event.id}}" class="h4">Back</a>
         <a href="/logout" class="h4">Logout</a>
     </header>
     <main>
-        <div class="d-flex flex-column align-items-center mt-3">
-        <h1>Change in Plans?</h1>
-        <form action="/update/{{event.id}}" method="post" class="d-flex flex-column mt-5">
-            {% csrf_token %}
-            <table>
-                <tr class="h5"><td>Event Name:</td><td><input type="text" name="eventname" id="eventname" value="{{event.event_name}}"></td></tr>
-                <tr class="h5"><td>Location:</td><td><input type="text" name="location" id="location" value="{{event.location}}"></td></tr>
-                <tr class="h5"><td>Description:</td><td><textarea name="desc" id="desc" cols="30" rows="5" value="{{event.desc}}"></textarea></td></tr>
-                <tr class="h5"><td>Event Date:</td><td><input type="date" name="date" id="date" value="{{event.date}}"></td></tr>
-            </table>
-            <input type="submit" value="Update" class="shadow-lg bg-success rounded mt-3 ms-3 h5">
-        </form>
+        <div class="d-flex flex-column align-items-center mt-3 container bg-dark border border-danger bg-gradient">
+            <h1 class="text-white">Change in Plans?</h1>
+            <form action="/update/{{event.id}}" method="post" class="d-flex flex-column mt-5 ">
+                {% csrf_token %}
+                <table>
+                    <tr class="h5 text-white"><td>Event Name:</td><td><input type="text" name="eventname" id="eventname" value="{{event.event_name}}"></td></tr>
+                    <tr class="h5 text-white"><td>Location:</td><td><input type="text" name="location" id="location" value="{{event.location}}"></td></tr>
+                    <tr class="h5 text-white"><td>Description:</td><td><textarea name="desc" id="desc" cols="30" rows="5" value="{{event.desc}}"></textarea></td></tr>
+                    <tr class="h5 text-white"><td>Event Date:</td><td><input type="date" name="date" id="date" value="{{event.date}}"></td></tr>
+                </table>
+                <input type="submit" value="Update" class="shadow-lg bg-secondary rounded mt-3 ms-3 h5">
+            </form>
         </div>
         <div class="errors">
             {% if messages %}
-            <ul class="messages">    
+            <ul class="messages alert alert-danger" role="alert">    
                 {% for message in messages %}    
                     <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
                 {% endfor %}
