@@ -11,20 +11,20 @@
   <li>This website will have a registeration page for the first visit and will have a seperate link for the users that already have an account to log in to with validation on both pages.</li>
   <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/register.jpg" alt"registration">
   <br> 
-  ![My Image](images/login.png)
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/login.png" alt"login">
   <li>After the regestration or logging in the user will be directed to a page that has a list of all the booked events, a link to add a new event and a way to view the details of the booked events.</li>
-  ![My Image](images/main-page.png)
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/main-page.png" alt"main-page">
   <li>Clicking the link to create a new page will take the user to a form that allows the user to book his event,
     there will be validation for the data inputted which returns error messages and if the location and date are already booked there will be an error message shown.</li>
-  ![My Image](images/new-event.png)
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/new-event.png" alt"new-event">
   <li>Deciding to check the details of the events will lead to 1 of 2 pages depending on the fact if the user is the creator of the event or not.</li>
   <li>If the user is the creator of the event then the user will access a page that has links to edit or delete the event.</li>
-  ![My Image](images/details-creator.png)
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/details-creator.png" alt"details for the creator">
   <li>The user can either delete the event or edit the event using the link provided.</li>
   <li>The edit page will lead to  form that has the previous information that the user wants to edit.</li>
-  ![My Image](images/edit.png)
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/edit.png" alt"edit">
   <li>If the user is not the creator the page shown will only have the details of the event.</li>
-  ![My Image](images/details-others.png)
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/details-others" alt"details for the other users">
 </ul>
 <br>
 Technologies used
