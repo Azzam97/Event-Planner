@@ -5,7 +5,7 @@
   any conflicts in schedule. This website does provide this need.
 </p>
 <br>
-## Functionality and Features
+<h2>Functionality and Features</h2>
 ---
 <ul>
   <li>This website will have a registeration page for the first visit and will have a seperate link for the users that already have an account to log in to with validation on both pages.</li>
