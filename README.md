@@ -1,14 +1,11 @@
 # Event-Planner
----
 <h2> About the application </h2>
----
 <p>With the increased number of events being held in the countries there is an increased need for a way to plan the events
   in a more organised way that gives the ability for all the users to check the dates of other events in order to not cause
   any conflicts in schedule. This website does provide this need.
 </p>
 <br>
 <h2>Functionality and Features</h2>
----
 <ul>
   <li>This website will have a registeration page for the first visit and will have a seperate link for the users that already have an account to log in to with validation on both pages.</li>
   <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/register.jpg" alt"registration">
@@ -29,8 +26,7 @@
   <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/details-others.png" alt"details for the other users">
 </ul>
 <br>
-Technologies used
----
+<h2>Technologies used</h2>
 <ul>
   <li>Python</li>
   <li>HTML</li>
