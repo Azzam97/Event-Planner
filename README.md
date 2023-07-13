@@ -24,7 +24,7 @@
   <li>The edit page will lead to  form that has the previous information that the user wants to edit.</li>
   <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/edit.png" alt"edit">
   <li>If the user is not the creator the page shown will only have the details of the event.</li>
-  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/details-others" alt"details for the other users">
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/details-others.png" alt"details for the other users">
 </ul>
 <br>
 Technologies used
