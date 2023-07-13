@@ -9,7 +9,7 @@
 ---
 <ul>
   <li>This website will have a registeration page for the first visit and will have a seperate link for the users that already have an account to log in to with validation on both pages.</li>
-  ![Registration]([images/register.jpg](https://github.com/Azzam97/Event-Planner/blob/main/images/register.jpg))
+  <img src="https://github.com/Azzam97/Event-Planner/blob/main/images/register.jpg" alt"registration">
   <br> 
   ![My Image](images/login.png)
   <li>After the regestration or logging in the user will be directed to a page that has a list of all the booked events, a link to add a new event and a way to view the details of the booked events.</li>
