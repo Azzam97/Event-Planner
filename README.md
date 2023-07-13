@@ -1,5 +1,7 @@
 # Event-Planner
 ---
+<h2> About the application </h2>
+---
 <p>With the increased number of events being held in the countries there is an increased need for a way to plan the events
   in a more organised way that gives the ability for all the users to check the dates of other events in order to not cause
   any conflicts in schedule. This website does provide this need.
